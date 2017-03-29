@@ -38,15 +38,18 @@ database/
 - db_connection.js
 
 ## Schema
+
 **restaurant_info**
+
 |      id       |      name     |    cuisine    |    address    |  open_hours   |  price_range  |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |    SERIAL     | VARCHAR(255)  | VARCHAR(100)  | VARCHAR(255)  | VARCHAR(255)  |      INT      |
 |  PRIMARY KEY  |   NOT NULL    |   NOT NULL    |   NOT NULL    |               |   NOT NULL    |
-|               |    UNIQUE     |               |               |               |               |
+|               |    UNIQUE     |               |               |               |               |               |
 
 **restaurant_ratings**
+
 |      id       | restaurant_id |     rating    |     review    | reviewer_name |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |    SERIAL     |      INT      |      INT      |      TEXT     |      TEXT     |
-|  PRIMARY KEY  |   NOT NULL    |   NOT NULL    |               |               |
+|  PRIMARY KEY  |   NOT NULL    |   NOT NULL    |               |               |               |
