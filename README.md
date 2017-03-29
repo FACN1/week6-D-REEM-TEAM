@@ -12,15 +12,16 @@ As a visitor to Nazareth ...
 ## File Structure Plan
 public/
 - index.html
-- list of restaurants (section)
-- form for submitting new restaurants (needs to contai all key info (but not rating info)).
+    - (list of restaurants (section))
+    - form for submitting new restaurants (needs to contain all key info (but not rating info)).
 - main.css
+
 js/
 - main.js (calling all sub-modules)
 - listener.js (for submitting forms)
 - formatQuery.js (stretch goal)
 - request.js (requests to server)
-- render.js
+- render.js (rendering xhr response to the dom)
 
 src/
 - index.js
@@ -30,11 +31,11 @@ src/
     - staticFile.js
     - database.js (add new restaurant to database and render full list)
 
-- search.js
-
 database/
 - build.js
 - build.sql
 - db_connection.js
+
+config.env
 
 ## Schema
