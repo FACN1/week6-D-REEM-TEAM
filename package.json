@@ -1,0 +1,20 @@
+{
+  "name": "d-reem-team-restaurant-directory",
+  "version": "1.0.0",
+  "description": "Restaurant directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN1/week6-D-REEM-TEAM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN1/week6-D-REEM-TEAM/issues"
+  },
+  "homepage": "https://github.com/FACN1/week6-D-REEM-TEAM#readme"
+}
