@@ -1,6 +1,15 @@
 # week6-D-REEM-TEAM
 Places to eat around Nazareth
 
+## User Stories
+As a visitor to Nazareth ...
+
+- I can browse recommended places to buy food / coffee nearby
+- I can add a new place
+- I can add a rating/review of an existing place
+
+
+## File Structure Plan
 public/
 - index.html
 - list of restaurants (section)
@@ -27,3 +36,5 @@ database/
 - build.js
 - build.sql
 - db_connection.js
+
+## Schema
