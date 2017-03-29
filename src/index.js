@@ -1,3 +1,6 @@
+// starts server
+// receives requests from browser
+// sends traffic to router
 const http = require('http');
 const router = require('./router.js');
 
