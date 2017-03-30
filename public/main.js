@@ -4,7 +4,7 @@ initLoadListener(function() {
       console.error(error);
       return;
     }
-    console.log(data);
+    renderToDOM(data)
   });
 });
 // initCreateRestaurantListener(function() {
