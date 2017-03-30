@@ -63,3 +63,30 @@ config.env
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |    SERIAL     |      INT      |      INT      |      TEXT     |      TEXT     |
 |  PRIMARY KEY  |   NOT NULL    |   NOT NULL    |               |               |               |
+
+
+## Database Queries
+**Get all restaurant info**
+```sql
+SELECT name, cuisine, address, open_hours, price_range FROM restaurant_info;
+```
+
+**Create restaurant**
+```sql
+INSERT INTO restaurant_info (name, cuisine, address, open_hours, price_range) VALUES ($1, $2, $3, $4, $5);
+```
+
+**Stretch goal - review info**
+```sql
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+```
+
+```sql
+-- Doesn't work, please don't make issues
+SELECT DISTINCT ON (restaurant_info.name)
+restaurant_info.name, restaurant_info.cuisine, restaurant_info.address, restaurant_info.open_hours, restaurant_info.price_range, restaurant_ratings.rating, restaurant_ratings.review, restaurant_ratings.reviewer_name
+FROM restaurant_info
+JOIN restaurant_ratings ON restaurant_info.id=restaurant_ratings.restaurant_id;
+```
