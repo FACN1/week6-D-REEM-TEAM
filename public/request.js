@@ -12,8 +12,7 @@ function makeRequest(method, url, callback) {
       callback(new Error("Status Code: ", xhr.status))
     }
   }
+  
   xhr.open(method, url);
   xhr.send();
-
-return {makeRequest: makeRequest}
 }
