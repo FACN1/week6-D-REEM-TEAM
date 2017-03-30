@@ -52,6 +52,22 @@ body {
   background: pink;
 }
 
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: purple;
+	margin-bottom: 1rem;
+	font-style: oblique;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color:purple;
+
+}
+
 #restaurant-list-container {
 	display: flex;
 	justify-content: center;
@@ -60,12 +76,12 @@ body {
 }
 
 
-
 .restaurant-wrapper {
   margin: 1rem;
 	background-color: rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 }
+
 
 .restaurant-name {
 	font-size: 2rem;
@@ -90,6 +106,7 @@ body {
 }
 
 .reviews-container {
+	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
 }
