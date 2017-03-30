@@ -1,6 +1,15 @@
 # week6-D-REEM-TEAM
 Places to eat around Nazareth
 
+## Getting Started
+- Bash commands to run:
+
+  ```bash
+  npm install
+  npm run createconfig
+  DB_URL=enter-db-url-here npm run createconfig # THE USER/PASSWORD will be kept in command line history, please update url manually
+  ```
+
 ## User Stories
 As a visitor to Nazareth ...
 
