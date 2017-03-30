@@ -3,3 +3,12 @@ var initLoadListener = function(callback) {
     callback();
   }
 }
+
+// var initCreateRestaurantListener = function(callback) {
+//   var createRestaurantButton = document.querySelector('#newRestaurantForm #submitButton');
+//   createRestaurantButton.addEventListener('click', function(event) {
+//     event.preventDefault();
+//
+//     callback();
+//   })
+// }

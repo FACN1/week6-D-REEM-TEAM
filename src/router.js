@@ -10,14 +10,13 @@ var router = (req, res) => {
   var parsedUrl = url.parse(endpoint);
   if (req.method === "POST") {
     if (parsedUrl.pathname === "/submit-restaurant") {
-      // call database.js new restaurant function (POST)
+      database.createRestaurant(req, res);
     } else if (parsedUrl.pathname === "/submit-review") {
       // call database.js review restaurant function (POST)
     }
   } else if (req.method === "GET") {
     if (parsedUrl.pathname === "/get-restaurants") {
-      res.writeHead(200, {"content-type": 'text/html'})
-      res.end(JSON.stringify({'key': 'testValue'}));
+      database.getRestaurants(req, res);
       // call database.js get restaurant function (GET)
     } else {
       staticFile(req, res);
