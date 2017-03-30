@@ -49,7 +49,23 @@ table {
 
 
 body {
-  background: pink;
+  background: rgba(65,105,225, 0.8);
+}
+
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: purple;
+	margin-bottom: 1rem;
+	font-style: oblique;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color:purple;
+
 }
 
 #restaurant-list-container {
@@ -60,12 +76,12 @@ body {
 }
 
 
-
 .restaurant-wrapper {
   margin: 1rem;
 	background-color: rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 }
+
 
 .restaurant-name {
 	font-size: 2rem;
@@ -90,6 +106,7 @@ body {
 }
 
 .reviews-container {
+	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -104,4 +121,24 @@ body {
 
 .user-review {
 	padding: 0.5rem;
+}
+
+#newRestaurantFormWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#newRestaurantForm {
+  width: 30%;
+  min-width: 15rem;
+}
+
+#newRestaurantForm input {
+  width: 100%;
+  margin: 0.1rem;
+  text-align: center;
 }
