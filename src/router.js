@@ -16,6 +16,8 @@ var router = (req, res) => {
     }
   } else if (req.method === "GET") {
     if (parsedUrl.pathname === "/get-restaurants") {
+      res.writeHead(200, {"content-type": 'text/html'})
+      res.end(JSON.stringify({'key': 'testValue'}));
       // call database.js get restaurant function (GET)
     } else {
       staticFile(req, res);
