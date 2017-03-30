@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "createconfig": "cd ./ && echo \"DB_URL = $DB_URL\nMAX_CONNECTIONS = 2\" > config.env"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/FACN1/week6-D-REEM-TEAM/issues"
   },
-  "homepage": "https://github.com/FACN1/week6-D-REEM-TEAM#readme"
+  "homepage": "https://github.com/FACN1/week6-D-REEM-TEAM#readme",
+  "dependencies": {
+    "env2": "^2.1.1",
+    "pg": "^6.1.5"
+  }
 }
