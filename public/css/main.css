@@ -122,3 +122,23 @@ h2 {
 .user-review {
 	padding: 0.5rem;
 }
+
+#newRestaurantFormWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#newRestaurantForm {
+  width: 30%;
+  min-width: 15rem;
+}
+
+#newRestaurantForm input {
+  width: 100%;
+  margin: 0.1rem;
+  text-align: center;
+}
