@@ -8,5 +8,6 @@ fs.readFile(`${__dirname}/db_build.sql`, (file) => {
   dbConnection.query(file.toString(), (err, res) => {
     if (err) throw err;
     console.log('Database created with result: ', res);
+    process.exit();
   }
 });
