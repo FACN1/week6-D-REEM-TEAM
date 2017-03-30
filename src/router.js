@@ -17,6 +17,7 @@ var router = (req, res) => {
   } else if (req.method === "GET") {
     if (parsedUrl.pathname === "/get-restaurants") {
       database.getRestaurants(req, res);
+      // call database.js get restaurant function (GET)
     } else {
       staticFile(req, res);
     }
