@@ -47,12 +47,61 @@ table {
 /* END OF CSS RESET */
 
 
+
 body {
   background: pink;
 }
 
+#restaurant-list-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-.restaurant-review {
-  border: 2px solid black;
-  box-sizing: border-box;
+
+
+.restaurant-wrapper {
+  margin: 1rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+.restaurant-name {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.cuisine {
+	padding: 0.5rem;
+}
+
+.address {
+	padding: 0.5rem;
+}
+
+.open-hours {
+	padding: 0.5rem;
+}
+
+.price-range {
+	padding: 0.5rem;
+}
+
+.reviews-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviewer-name {
+	padding: 0.5rem;
+}
+
+.reviewer-rating {
+	padding: 0.5rem;
+}
+
+.user-review {
+	padding: 0.5rem;
 }
