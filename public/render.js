@@ -1,11 +1,11 @@
-var Render = (function (response){
+var renderToDOM = function(response) {
     var restaurantListContainer = document.getElementById('restaurant-list-container');
 
     var restaurantList = document.getElementById('restaurant-list');
 
     var restaurantListDIV = document.createElement('div');
 
-    var restaurantsArray = data.restaurants.slice();
+    var restaurantsArray = response.restaurants.slice();
     restaurantsArray.forEach(function(restaurant){
 
       // CREATE ELEMENTS
@@ -60,5 +60,4 @@ var Render = (function (response){
     });
 
     restaurantListContainer.replaceChild(restaurantListDIV, restaurantList);
-
-})();
+}
