@@ -1,3 +1,124 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+
+
 body {
   background: pink;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: purple;
+	margin-bottom: 1rem;
+	font-style: oblique;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color:purple;
+
+}
+
+#restaurant-list-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.restaurant-wrapper {
+  margin: 1rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+
+.restaurant-name {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.cuisine {
+	padding: 0.5rem;
+}
+
+.address {
+	padding: 0.5rem;
+}
+
+.open-hours {
+	padding: 0.5rem;
+}
+
+.price-range {
+	padding: 0.5rem;
+}
+
+.reviews-container {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviewer-name {
+	padding: 0.5rem;
+}
+
+.reviewer-rating {
+	padding: 0.5rem;
+}
+
+.user-review {
+	padding: 0.5rem;
 }
