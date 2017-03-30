@@ -68,7 +68,7 @@ h2 {
 
 }
 
-#restaurant-list-container {
+#restaurant-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
