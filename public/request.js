@@ -8,11 +8,11 @@ function makeRequest(method, url, callback) {
   xhr.onreadystatechange = function () {
     if (xhr.onreadystatechange === 4 && xhr.status === 200) {
       callback(null, JSON.parse(xhr.responseText));
-    } else {
+    } else if (xhr.status !== 200) {
       callback(new Error("Status Code: ", xhr.status))
     }
   }
-  
+
   xhr.open(method, url);
   xhr.send();
 }
