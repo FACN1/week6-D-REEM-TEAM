@@ -16,19 +16,21 @@
     <header>
       <h2>Find Food and Coffee Around Nazareth</h2>
     </header>
-      <article class="restaurant-list-wrapper">
-        <ul class="restaurant">
+    <div id="restaurant-list-container">
+      <article class="restaurant-wrapper">
+        <ul class="restaurant-list-item">
           <li>
-            <ul class="resturant-info">
-              <li>Casa Nova</li>
-              <li>Falafel</li>
-              <li>Al Bishara St 5, 17100</li>
-              <li>Monday-Sunday: 08:00-20:00</li>
-              <li>Reviews
-                <ul class="restaurant-review">
-                  <li>King Edgar</li>
-                  <li>****</li>
-                  <li>"Great falafel, noisy parrot"</li>
+            <ul class="resturant-info-list">
+              <li class="restaurant-name">Casa Nova</li>
+              <li class="cuisine">Falafel</li>
+              <li class="address">Al Bishara St 5, 17100</li>
+              <li class="open-hours">Monday-Sunday: 08:00-20:00</li>
+              <li class="price-range">$$</li>
+              <li class="reviews-container">Reviews
+                <ul class="review-list">
+                  <li class="reviewer-name">King Edgar</li>
+                  <li class="reviewer-rating">****</li>
+                  <li class="user-review">"Great falafel, noisy parrot"</li>
                 </ul>
               </li>
             </ul>
@@ -37,10 +39,52 @@
       </article>
 
 
-    <form action="">
+      <article class="restaurant-wrapper">
+        <ul class="restaurant-list-item">
+          <li>
+            <ul class="resturant-info-list">
+              <li class="restaurant-name">Casa Nova</li>
+              <li class="cuisine">Falafel</li>
+              <li class="address">Al Bishara St 5, 17100</li>
+              <li class="open-hours">Monday-Sunday: 08:00-20:00</li>
+              <li class="price-range">$$</li>
+              <li class="reviews-container">Reviews
+                <ul class="review-list">
+                  <li class="reviewer-name">King Edgar</li>
+                  <li class="reviewer-rating">****</li>
+                  <li class="user-review">"Great falafel, noisy parrot"</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
 
-    </form>
+    </div>
+
+    <section id="newRestaurantFormWrapper">
+      <form id="newRestaurantForm">
+        <span>Restaurant name</span>
+        <input type="text" name="submitName" required><br>
+        <span>Cuisine</span>
+        <input type="text" name="submitCuisine" placeholder="e.g. Pizza / Falafel" required><br>
+        <span>Restaurant Address</span>
+        <input type="text" name="submitAddress" placeholder="restaurant's address" required><br>
+        <span>Open Hours</span>
+        <input type="text" name="submitOpenHours" placeholder="eg: Monday-Friday: 08:00-20:00"><br>
+        <span>Rate price range 1/5</span>
+        <input type="text" name="submitPriceRange" placeholder="eg: '1' for cheap or '5' for expensive" required><br>
+        <button type="submit" name="submit" id="submitButton">Submit</button><br>
+      </form>
+
+    </section>
+
+
   </section>
 
 </body>
+<script type="text/javascript" src="./request.js"></script>
+<script type="text/javascript" src="./listener.js"></script>
+<script type="text/javascript" src="./render.js"></script>
+<script type="text/javascript" src="./main.js"></script>
 </html>
