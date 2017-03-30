@@ -6,10 +6,12 @@ function makeRequest(method, url, callback) {
 
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
-    if (xhr.onreadystatechange === 4 && xhr.status === 200) {
-      callback(null, JSON.parse(xhr.responseText));
-    } else if (xhr.status !== 200) {
-      callback(new Error("Status Code: ", xhr.status))
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        callback(null, JSON.parse(xhr.responseText));
+      } else {
+        callback(new Error("Status Code: ", xhr.status))
+      }
     }
   }
 
