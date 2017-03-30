@@ -40,21 +40,23 @@ var getRestaurants = (req, res) => {
 }
 var createRestaurant = (req, res) => {
 //  dbConnection.query(`INSERT INTO users (name, location) VALUES ($1, $2)`, [values['username'], values['location']];
-  var postText = '';
-  req.on('data', (err, chunkOfData) => {
-    postText += chunkOfData;
+  var requestText = '';
+  req.on('data', (data) => {
+    requestText += data;
   })
   req.on('end', () => {
     // postText
-    var formData = qs.parse(postText);
+    var formData = qs.parse(requestText);
+    console.log('Formdata: ', formData);
 
-    dbConnection.query('INSERT INTO restaurant_info (name, cuisine, address, open_hours, price_range) VALUES ($1, $2, $3, $4, $5)'), [formData["submitName"], formData["submitCuisine"], formData["submitAddress"], formData["submitOpenHours"], formData["submitPriceRange"]], (error, dbRes) => {
+    dbConnection.query(`INSERT INTO restaurant_info (name, cuisine, address, open_hours, price_range) VALUES ($1, $2, $3, $4, $5)`, [formData["submitName"], formData["submitCuisine"], formData["submitAddress"], formData["submitOpenHours"], formData["submitPriceRange"]], (error, dbRes) => {
       if (error) {
         console.log(error);
         return;
       }
       console.log("database response is: ", dbRes);
-    }
+      res.end();
+    });
 
 
   })
@@ -70,5 +72,6 @@ var createRestaurant = (req, res) => {
 
 
 module.exports = {
-  getRestaurants: getRestaurants
+  getRestaurants: getRestaurants,
+  createRestaurant: createRestaurant
 };
