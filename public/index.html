@@ -67,16 +67,16 @@
 
     <section id="newRestaurantFormWrapper">
       <form id="newRestaurantForm" action="/submit-restaurant" method="POST">
-        <span>Restaurant name</span>
-        <input type="text" name="submitName" required><br>
-        <span>Cuisine</span>
-        <input type="text" name="submitCuisine" placeholder="e.g. Pizza / Falafel" required><br>
-        <span>Restaurant Address</span>
-        <input type="text" name="submitAddress" placeholder="restaurant's address" required><br>
-        <span>Open Hours</span>
-        <input type="text" name="submitOpenHours" placeholder="eg: Monday-Friday: 08:00-20:00"><br>
-        <span>Rate price range 1/5</span>
-        <input type="text" name="submitPriceRange" placeholder="eg: '1' for cheap or '5' for expensive" required><br>
+        <label for="submitName">Restaurant name</label>
+        <input type="text" name="submitName" id="submitName" required><br>
+        <label for="submitCuisine">Cuisine</label>
+        <input type="text" name="submitCuisine" id="submitCuisine"placeholder="e.g. Pizza / Falafel" required><br>
+        <label for="submitAddress">Restaurant Address</label>
+        <input type="text" name="submitAddress" id="submitAddress"placeholder="restaurant's address" required><br>
+        <label for="submitOpenHours">Open Hours</label>
+        <input type="text" name="submitOpenHours" id="submitOpenHours"placeholder="eg: Monday-Friday: 08:00-20:00"><br>
+        <label for="submitPriceRange">Rate price range 1/5</label>
+        <input type="text" name="submitPriceRange" id="submitPriceRange" placeholder="eg: '1' for cheap or '5' for expensive" required><br>
         <button type="submit" name="submit" id="submitButton">Submit</button><br>
       </form>
 
