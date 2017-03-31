@@ -8,7 +8,16 @@ Places to eat around Nazareth
   npm install
   npm run createconfig
   DB_URL=enter-db-url-here npm run createconfig # THE USER/PASSWORD will be kept in command line history, please update url manually
+  createdb week6
   ```
+- Setup database
+
+  ```sql
+  CREATE USER week6;
+  GRANT ALL PRIVILEGES ON DATABASE week6 TO week6;
+  ALTER USER week6 WITH PASSWORD 'passwordhere';
+  ```
+
 
 ## User Stories
 As a visitor to Nazareth ...
