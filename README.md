@@ -8,6 +8,7 @@ Places to eat around Nazareth
   npm install
   npm run createconfig
   DB_URL=enter-db-url-here npm run createconfig # THE USER/PASSWORD will be kept in command line history, please update url manually
+  createdb week6
   ```
 - Setup database
 
