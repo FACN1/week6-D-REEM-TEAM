@@ -4,7 +4,7 @@ const url = require('url');
 const staticFile = require('./routes/staticFile.js');
 const database = require('./routes/database.js');
 
-var router = (req, res) => {
+const router = (req, res) => {
 // handle URLs
   var endpoint = req.url;
   var parsedUrl = url.parse(endpoint);
