@@ -68,7 +68,7 @@ h2 {
 
 }
 
-#restaurant-list {
+.restaurant-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,7 +123,7 @@ h2 {
 	padding: 0.5rem;
 }
 
-#newRestaurantFormWrapper {
+.form-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -132,12 +132,12 @@ h2 {
 
 }
 
-#newRestaurantForm {
+.restaurant-form {
   width: 30%;
   min-width: 15rem;
 }
 
-#newRestaurantForm input {
+.restaurant-form input {
   width: 100%;
   margin: 0.1rem;
   text-align: center;
