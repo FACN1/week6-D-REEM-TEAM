@@ -17,7 +17,7 @@
       <h2>Find Food and Coffee Around Nazareth</h2>
     </header>
     <div id="restaurant-list-container">
-      <div id="restaurant-list">
+      <div id="restaurant-list" class="restaurant-list">
         <article class="restaurant-wrapper">
           <ul class="restaurant-list-item">
             <li>
@@ -65,8 +65,8 @@
 
     </div>
 
-    <section id="newRestaurantFormWrapper">
-      <form id="newRestaurantForm" action="/submit-restaurant" method="POST">
+    <section id="newRestaurantFormWrapper" class="form-wrapper">
+      <form id="newRestaurantForm" class="restaurant-form" action="/submit-restaurant" method="POST">
         <label for="submitName">Restaurant name</label>
         <input type="text" name="submitName" id="submitName" required><br>
         <label for="submitCuisine">Cuisine</label>
